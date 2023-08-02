@@ -2,7 +2,6 @@
 let rect_width  = 20;
 let rect_height = 20;
 
-
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -19,5 +18,14 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+  //place random rectangles with random colours on random spots on the grid.
+  let x = random(0, 200);
+  let y = random(0, 200);
+  let r = random(0, 255);
+  let g = random(0, 255);
+  let b = random(0, 255);
+  let a = random(0, 255);
+  fill(r, g, b, a);
+  rect(x, y, rect_width, rect_height);
 }
+
