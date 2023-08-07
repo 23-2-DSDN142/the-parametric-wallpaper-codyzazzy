@@ -34,21 +34,21 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   pop();
 
   push();
-  translate(translatex, translatey+15);
+  translate(translatex+6, translatey+15);
   rotate(50);
   strokeWeight(mystrokeWeight-1);
   rect(recty*0.85, rectx*0.85, rect_width*0.85, rect_height*0.85);
   pop();
   
   push();
-  translate(translatex, translatey+30);
+  translate(translatex+6, translatey+30);
   rotate(55);
   strokeWeight(mystrokeWeight-1);
   rect(recty*0.7, rectx*0.7, rect_width*0.7, rect_height*0.7);
   pop();
   
   push();
-  translate(translatex, translatey+45);
+  translate(translatex+6, translatey+45);
   rotate(60);
   strokeWeight(mystrokeWeight-1);
   rect(recty*0.55, rectx*0.55, rect_width*0.55, rect_height*0.55);
